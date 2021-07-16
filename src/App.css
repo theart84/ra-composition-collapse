@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 700px;
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.collapse {
+  padding: 25px;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title {
+  display: inline-block;
+  cursor: pointer;
+  border-bottom: 1px solid #ececec;
 }
 
-.App-link {
-  color: #61dafb;
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon-arrow-top {
+  width: 20px;
+  height: 20px;
+  background-image: url('https://alfa-laboratory.github.io/arui-feather/styleguide/icon_arrow-up_s_black.9bc156171667a69a5c279bad4288ca20.svg');
 }
+
+.icon-arrow-down {
+  width: 20px;
+  height: 20px;
+  background-image: url('https://alfa-laboratory.github.io/arui-feather/styleguide/icon_arrow-down_s_black.7d5a1ad9c0d16b83a3146deb9c326a19.svg');
+}
+
+.collapse-content {
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: height 1s;
+}
+
+.collapse-content__visible {
+  visibility: visible;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.paragraph {
+  box-sizing: border-box;
+  padding: 20px 0;
+}
+
+
